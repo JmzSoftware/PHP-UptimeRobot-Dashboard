@@ -1,6 +1,4 @@
 <?php
-ini_set('display_errors', '1');
-
 /*
 
 @Author: Adam Matthews
@@ -11,6 +9,12 @@ Uptime Robot API Scripts
 API forked from ckdarby/PHP-UptimeRobot
 
 */
+
+$config = [
+    'apiKey' => 'APIKEY',
+    'url' => 'http://api.uptimerobot.com'
+];
+
 require_once('UptimeRobot/config.php');
 use UptimeRobot\API;
 
